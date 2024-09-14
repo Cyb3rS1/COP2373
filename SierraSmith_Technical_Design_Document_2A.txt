@@ -1,0 +1,81 @@
+
+Technical Design Document Exercise 2A
+
+---
+
+Name: Sierra Smith  
+Date Created: 9/14/2024
+
+---
+
+Program Description:
+
+This program acts as a spam email detector. It takes an email message entered 
+by the user and tests the likelihood of the email being spam by seeing how many 
+words match up with commonly used words/phrases in spam emails.
+For each match detected, a spam score accumulates and is later converted to a percentage. 
+The number of words in the email is also taken into consideration; as the spam score can 
+sometimes yield inaccurate results on its own. 
+ - The spam score is divided by the word count, resulting in a percentage of how many 
+	spam words make up the email's entirety.
+These percentages are compared and produce a final spam rating.
+The program outputs the email word count, all suspicious words/phrases found, the spam score,
+resulting percentages, and the final rating.
+
+---
+
+Logical Steps:  
+
+1. Prompt the user to enter a suspicious email.
+2. Compare every word in the email to the SEDA "database" to see how many spam word matches appear.
+3. Display the email word count just for funsies. (The user might be intrigued by this).
+4. Display every instance of a match and how many times that match was found.
+5. Accumulate spam_score based on every instance of a match being found (reoccurring words included).
+6. Reformat and print spam_score as a percentage so it can be compared with "part" variable.
+7. Divide spam_score by word_count to get the percentage of how many spam words make up the email's entirety.
+8. Determine the final rating based on comparison of "part" and "ss_per" percentage. This extra measure 
+	ensures a more accurate rating.
+9. Display the spam_score, spam_score percentage (ss_per), "part", and final rating (rate).
+10. Take user input that determines whether to reiterate the entire program or terminate it.
+
+---
+
+Variables: 
+ 
+1. DIV: Divider that helps make output more legible.
+2. spam_words: Word bank of words and phrases commonly found in spam emails.
+3. spam_score: Spam score that will accumulate with each spam word/phrase found in user input.
+4. email: Where the user enters a suspicious email.
+5. word_count: The number of words found in the email.
+6. x: The number of each spam word occurrence found in the user input.
+7. current_word: Matched spam word reformatted with a capitalized first letter.
+8. ss_per: spam_score reformatted into a percentage.
+9. part: Percentage of how many spam words make up the email's entirety.
+10. rate: Variable assigned a rating according to the percentage score comparison.
+11. result: End result that includes original and reformatted spam_score, part percentage, and final rating.
+12. yes: Variable based on user input that can reiterate process() and terminate the program.
+
+---
+
+Functions:
+1. Function Name: seda 
+   Description: Main function where every other function resides.
+   Parameters: none 
+   Returns: none
+
+2. Function Name: process
+   Description: First function in seda(); carries out entire operation of taking user input, scanning the input 
+	for spam words, processing scores and percentages, and printing out the results.
+   Parameters: none  
+   Returns: none
+
+3. Function Name: again  
+   Description: Last function to iterate in seda(); restarts process() function or terminates loop based on user 	input.
+   Parameters: none 
+   Returns: none
+
+---
+
+Link to repository: https://github.com/Cyb3rS1/COP2373/tree/Chapter2
+
+---

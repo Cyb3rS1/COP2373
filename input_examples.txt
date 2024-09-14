@@ -1,0 +1,15 @@
+
+Definitely spam:
+Urgent! You've been selected for this exclusive limited-time offer! Join now at no cost to receive a free gift with this incredible deal! Don't wait and don't delete! Secure the best price now and learn how to instantly earn fast cash!
+
+Harmless email:
+Hey buddy! Long time no see! I heard you got a free gift the other day! How special. I hope you enjoyed it.
+
+
+EDIT : What if nearly the entire email contains spam words? The spam score doesn't always accurately portray that.
+I made an equation that takes the email's word count and compares it to the spam score.
+
+Good example to test this ^ (compare spam_score percentage [ss_per] with word_count percentage [part]):
+free free free free free free free cats hugs love free free free
+
+
