@@ -1,5 +1,3 @@
-This repository is for my COP2373 (Programming Concepts II) class.
+This repository is for my COP2373 (Programming Concepts II) class of Fall 2024.
 
-Using GitHub repositories, IPython, and PyCharm is very new to me, so please forgive me if I make any mistakes.
-
-I look forward to utilizing these new tools in my future coding career!
+You will find little projects here that demonstrate my passion for making useful programs that deliver a fun user experience!
