@@ -1,0 +1,102 @@
+
+Expense Tracker Program
+
+---
+
+Name: Sierra Smith  
+Date Created: 9/22/2024
+
+---
+
+Program Description: 
+- Prompts the user for a list of their expenses, then calculates and displays the
+  highest expense, lowest expense, and total of all expenses
+
+---
+
+Logical Steps:  
+1. Call expense_tracker().
+2. Call initial().
+3. Call run().
+4. User enters their expenses in the form of a list.
+5. The input("info") gets passed to check().
+6. After "info" is deemed valid, it gets passed on to list_maker().
+7. The lists for the user's expenses get passed on to analyze().
+8. Analyze() uses lambda functions to calculate the highest, lowest, and total of all expenses.
+9. Use the variables assigned to the corresponding expenses to display them.
+10. Call restart().
+11. Prompt user for input: call run() if user wants to start a new calculation or else quits the program.
+
+---
+
+Variables:  
+1. DIV: divider for neater code
+2. EXAMPLE: example input for user to follow
+3. info: where raw user input is stored
+4. expenses: "info" split into one list
+5. new: list where all organized expenses are stored
+6. nums: where all numerical data from "new" is stored
+7. n: each item taken from "expenses" that gets formatted and then appended to "new"
+8. num: the last item in each "new" sub list that gets converted into a float and appended to "nums"
+9. total: sum from lambda function that adds all items in the "nums" list together
+10. highest: highest number from lambda function that compared all items in "nums" list
+11. high_index: index of "highest" number in "nums"
+12. high_label: corresponding label that matches "highest"
+13. high_amount: corresponding amount that matches "highest"
+14. lowest: lowest number from lambda function that compared all items in "nums" list
+15. low_index: index of "lowest" number in "nums"
+16. low_label: corresponding label that matches "lowest"
+17. low_amount: corresponding amount that matches "lowest"
+18. again: user input that determines whether to call run() or end the program
+
+---
+
+Functions:
+1. Function Name: delay 
+   Description: Adds short delay for realistic program effect
+   Parameters: none 
+   Returns: none
+
+2. Function Name: expense_tracker
+   Description: Main function; enables all other functions to work. Calls initial()
+   Parameters: none
+   Returns: none
+
+3. Function Name: initial
+   Description: Only used once; contains welcome message then calls run()
+   Parameters: none
+   Returns: none
+
+4. Function Name: run
+   Description: Where user input ("info") is initially taken. Calls check()
+   Parameters: none
+   Returns: none
+
+5. Function Name: check
+   Description: Checks user input for mistakes. Calls list_maker when input is deemed valid.
+   Parameters: info
+   Returns: none
+
+6. Function Name: list_maker
+   Description: Takes user input and makes it into two lists: One is all their expenses organized into sub lists
+	and the other is made of all numerical data from the organized expense list. Calls analyze()	 
+   Parameters: info
+   Returns: none
+
+7. Function Name: analyze
+   Description: Uses lambda functions to analyze numbers from "nums" list. Assigns all necessary numbers and
+	strings to variables that will display in the user's expense summary. Prints the expense summary and then
+	calls restart()
+   Parameters: new, nums
+   Returns: none
+
+8. Function Name: restart
+   Description: Last function that prompts the user for input on whether they want to start a new calculation
+	or end the program. If the user wants to start again, the program calls run(). If else, the program
+	ends with a final message.
+   Parameters: none
+   Returns: none
+
+---
+
+Link to repository: https://github.com/Cyb3rS1/COP2373/tree/Chapter3

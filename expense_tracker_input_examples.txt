@@ -1,0 +1,17 @@
+user input examples for Expense Tracker
+
+
+Will work:
+
+cat 400; desk 200; computer 1200; anime 200
+yacht 20000; water 340; gas 27.58; polish 10; peacock 20; electric 150
+
+Will not work:
+
+games 200 car 150 tv 300 flowers 20 food 400
+pets 300
+
+Will (1)mess up the output or (2)break the program (updates coming soon):
+
+1. board games 300; makeup 200 ferrets 300; water 250
+2. lights 100; camera 200; action
